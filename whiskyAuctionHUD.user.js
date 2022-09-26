@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     whiskyAuctionHUD
-// @version  0.1.3
+// @version  0.1.4
 // @grant    none
 // @include      https://whisky.auction/*
 // @updateURL    https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
@@ -19,7 +19,7 @@ for(const elt of document.getElementsByClassName('lotItem')){
 
 //create link
 function addLink(elt, partialTitle, title, lotId){
-  const txt = store[title] || store[lotId];
+  let txt = store[title] || store[lotId];
   const url = 'https://www.google.com/search?channel=fs&client=ubuntu&q=' + encodeURI(title);
   txt = txt || defaultTxt;
   const link = document.createElement('a');
