@@ -7,7 +7,7 @@
 // @downloadURL  https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
 // ==/UserScript==
 const defaultTxt = 'google it!';
-const store = JSON.parse(window.localStorage.getItem('myStore') || '{}');
+const store = JSON.parse(window.localStorage.getItem('whiskyAuctionHUD') || '{}');
 
 //add links to each lot item
 for(const elt of document.getElementsByClassName('lotItem')){
