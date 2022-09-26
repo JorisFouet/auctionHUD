@@ -1,11 +1,7 @@
-# auctionHUD
-whisky.auction HUD
-
+# whisky.auction HUD
 Simple javascript overlay to track items on whisky.auction.
 
-Adds a 'google it' link
-
-which:
+Adds a 'google it' link which:
 
   Opens a search page on past auctions.
   
