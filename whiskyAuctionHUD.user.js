@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     whiskyAuctionHUD
-// @version  0.1.2
+// @version  0.1.3
 // @grant    none
 // @include      https://whisky.auction/*
 // @updateURL    https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
