@@ -17,11 +17,15 @@ Simple javascript overlay to track items on whisky.auction. Adds a 'google it' l
 
 # chrome INSTALL
 Install tampermonkey : https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
+
 Visit https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
+
 Follow instructions.
 
 
 # firefox INSTALL
 Install greasemonkey : https://addons.mozilla.org/en-GB/firefox/addon/greasemonkey/
+
 Visit https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
+
 Follow instructions.
