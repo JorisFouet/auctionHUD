@@ -39,12 +39,12 @@ function addLink(elt, partialTitle, txt, title, lotId){
   const meter = document.createElement('span');
   meter.classList.add('tampermonkey-meter');
   link.style.display = 'block';
-  meter.style.backgroundImage = 'url(https://chuckprudence.com/mp3/bar.png)';
+  meter.style.backgroundImage = 'url(https://github.com/JorisFouet/auctionHUD/raw/main/bar.png)';
   meter.style.backgroundRepeat = 'no-repeat';
   meter.style.display = 'block';
   meter.style.height = '20px';
   meter.style.width = '0px';
-  const myEstimate = parseInt(txt.match(/\d*$/));
+  const myEstimate = parseInt(txt.match(/\d+/));
   const winningBid = parseInt(elt.getElementsByClassName('winningBid value')[0].innerText.match(/\d*$/)[0]);
   
   //fill it by value
