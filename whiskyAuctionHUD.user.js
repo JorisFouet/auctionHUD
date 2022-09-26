@@ -14,11 +14,7 @@ for(const elt of document.getElementsByClassName('lotItem')){
   const lotId = elt.getAttribute('id').toString().match(/lot_(\d+)$/)[1];
   const partialTitle = elt.getElementsByClassName('lotName1')[0].innerText;
   const lotTitle = partialTitle + ' ' + elt.getElementsByClassName('lotName2')[0].innerText;
-  addLink(elt, 
-          partialTitle,
-          store[lotTitle] || store[lotId], 
-          lotTitle,
-          lotId);
+  addLink(elt, partialTitle, store[lotTitle] || store[lotId], lotTitle, lotId);
 }
 
 //create link
