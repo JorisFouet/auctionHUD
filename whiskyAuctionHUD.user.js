@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     whiskyAuctionHUD
-// @version  0.1.4
+// @version  0.1.5
 // @grant    none
 // @include      https://whisky.auction/*
 // @updateURL    https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
@@ -12,8 +12,8 @@ const store = JSON.parse(window.localStorage.getItem('whiskyAuctionHUD') || '{}'
 //add links to each lot item
 for(const elt of document.getElementsByClassName('lotItem')){
   const lotId = elt.getAttribute('id').toString().match(/lot_(\d+)$/)[1];
-  const partialTitle = elt.getElementsByClassName('lotName1')[0].innerText;
-  const lotTitle = partialTitle + ' ' + elt.getElementsByClassName('lotName2')[0].innerText;
+  const partialTitle = elt.getElementsByClassName('lotName1')[0].innerText.replace('&', ' ');
+  const lotTitle = partialTitle + ' ' + elt.getElementsByClassName('lotName2')[0].innerText.replace('&', ' ');
   addLink(elt, partialTitle, lotTitle, lotId);
 }
 
