@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     whiskyAuctionHUD
-// @version  0.1.1
+// @version  0.1.2
 // @grant    none
 // @include      https://whisky.auction/*
 // @updateURL    https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
@@ -14,11 +14,12 @@ for(const elt of document.getElementsByClassName('lotItem')){
   const lotId = elt.getAttribute('id').toString().match(/lot_(\d+)$/)[1];
   const partialTitle = elt.getElementsByClassName('lotName1')[0].innerText;
   const lotTitle = partialTitle + ' ' + elt.getElementsByClassName('lotName2')[0].innerText;
-  addLink(elt, partialTitle, store[lotTitle] || store[lotId], lotTitle, lotId);
+  addLink(elt, partialTitle, lotTitle, lotId);
 }
 
 //create link
-function addLink(elt, partialTitle, txt, title, lotId){
+function addLink(elt, partialTitle, title, lotId){
+  const txt = store[lotTitle] || store[lotId];
   const url = 'https://www.google.com/search?channel=fs&client=ubuntu&q=' + encodeURI(title);
   txt = txt || defaultTxt;
   const link = document.createElement('a');
@@ -90,7 +91,7 @@ function addLink(elt, partialTitle, txt, title, lotId){
       
       //display comment
       link.remove();
-      addLink(elt, partialTitle, comment, title, lotId);
+      addLink(elt, partialTitle, title, lotId);
     }
     
     //ignore click
