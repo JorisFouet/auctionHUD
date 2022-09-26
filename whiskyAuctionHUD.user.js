@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name     whiskyAuctionHUD
-// @version  0.1
+// @version  0.1.1
 // @grant    none
 // @include      https://whisky.auction/*
 // @updateURL    https://github.com/JorisFouet/auctionHUD/raw/main/whiskyAuctionHUD.user.js
@@ -94,7 +94,7 @@ function addLink(elt, partialTitle, txt, title, lotId){
       
       //display comment
       link.remove();
-			addLink(elt, partialTitle, comment, title, lotId);
+      addLink(elt, partialTitle, comment, title, lotId);
     }
     
     //ignore click
