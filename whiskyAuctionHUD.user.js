@@ -113,7 +113,6 @@ function addLink(elt, partialTitle, txt, title, lotId){
   if(existingLink.length){
     existingLink[0].remove();
   }
-  
   if(txt == defaultTxt){
     elt.getElementsByClassName('lot-statuses')[0].prepend(link);
   }
