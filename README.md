@@ -1,13 +1,15 @@
 # whisky.auction HUD
-Simple javascript overlay to track items on whisky.auction.
+Simple javascript overlay to track items on whisky.auction. Adds a 'google it' link which:
 
-Adds a 'google it' link which:
 
   Opens a search page on past auctions.
   
+  
   Opens a google search.
   
+  
   Lets you input your own estimated value for the item and displays it accross the website for all identical items.
+  
   
   Displays graphically the difference between your estimation and the current bid + commission + shipping.
   
