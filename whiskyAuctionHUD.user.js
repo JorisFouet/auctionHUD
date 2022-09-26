@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name     whiskyAuctionHUD
 // @version  0.1
