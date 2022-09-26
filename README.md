@@ -11,7 +11,7 @@ Simple javascript overlay to track items on whisky.auction. Adds a 'google it' l
   Lets you input your own estimated value and displays it accross the website for all identical items.
   
   
-  Displays graphically the difference between your estimation and the current bid + commission + shipping.
+  Displays on a meter the difference between your estimation and the current bid + commission + shipping.
   
   
 
