@@ -19,7 +19,7 @@ for(const elt of document.getElementsByClassName('lotItem')){
 
 //create link
 function addLink(elt, partialTitle, title, lotId){
-  const txt = store[lotTitle] || store[lotId];
+  const txt = store[title] || store[lotId];
   const url = 'https://www.google.com/search?channel=fs&client=ubuntu&q=' + encodeURI(title);
   txt = txt || defaultTxt;
   const link = document.createElement('a');
