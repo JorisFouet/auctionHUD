@@ -1,4 +1,12 @@
+<span>
+<img src="instructions.png" title="After." width="160"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Before: <img src="without.png" title="Before." width="160"/>&nbsp;&nbsp;&nbsp;&nbsp;
+After: <img src="with.png" title="After." width="160"/>
+</span>
+
+
 # whisky.auction HUD
+
 Simple javascript overlay to track personal estimations on whisky.auction. Adds a 'google it' link to each item which:
 
 
