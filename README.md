@@ -1,7 +1,7 @@
 <span>
-<img src="instructions.png" title="After." width="220"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Before: <img src="without.png" title="Before." width="220"/>&nbsp;&nbsp;&nbsp;&nbsp;
-After: <img src="with.png" title="After." width="220"/>
+<img src="instructions.png" title="After." width="210"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Before: <img src="without.png" title="Before." width="210"/>&nbsp;&nbsp;&nbsp;&nbsp;
+After: <img src="with.png" title="After." width="210"/>
 </span>
 
 
