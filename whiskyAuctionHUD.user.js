@@ -68,7 +68,7 @@ function addLink(elt, partialTitle, title, lotId){
   if(myEstimate > fullPrice){
     const btn = elt.getElementsByClassName('btnFollow')[0];
     if(btn.classList.contains('notFollowing')){
-			elt.getElementsByClassName('btnFollow')[0].click();      
+      elt.getElementsByClassName('btnFollow')[0].click();      
     }
   }
   
