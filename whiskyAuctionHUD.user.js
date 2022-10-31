@@ -87,7 +87,7 @@ function addLink(elt, partialTitle, title, lotId){
       
       //store comment
       store[title] = comment;
-      window.localStorage.setItem('myStore', JSON.stringify(store));
+      window.localStorage.setItem('whiskyAuctionHUD', JSON.stringify(store));
       
       //display comment
       link.remove();
