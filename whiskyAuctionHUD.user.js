@@ -93,14 +93,10 @@ function addLink(elt, partialTitle, title, lotId){
       link.remove();
       addLink(elt, partialTitle, title, lotId);
     }
-    
-    //ignore click
-    event.stopPropagation();
-    event.preventDefault();
     return false;
   });
   
-  //set link before title
+  //remove existing
   const existingMeter = elt.getElementsByClassName('tampermonkey-meter');
   if(existingMeter.length){
     existingMeter[0].remove();
@@ -109,9 +105,13 @@ function addLink(elt, partialTitle, title, lotId){
   if(existingLink.length){
     existingLink[0].remove();
   }
+  
+  //set first link top right to be visible
   if(txt == defaultTxt){
     elt.getElementsByClassName('lot-statuses')[0].prepend(link);
   }
+  
+  //and edited ones above the title
   else{
     elt.getElementsByClassName('lot-statuses')[0].prepend(meter);
     (elt.getElementsByClassName('lot-title')[0] || elt.getElementsByClassName('product-title')[0]).append(link);
