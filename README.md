@@ -10,7 +10,7 @@ After: <img src="with.png" title="After." width="210"/>
 Simple javascript overlay to track personal estimations on whisky.auction. Adds a 'google it' link to each item which:
 
 
-  Opens a search page on past auctions.
+  Opens a search page on past auctions. (Needs popups allowed.)
   
   
   Opens a google search.
